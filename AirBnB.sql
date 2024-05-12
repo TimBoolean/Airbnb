@@ -3,7 +3,6 @@ SELECT * FROM airbnbbb.analysis;
 alter table analysis
 modify column guests varchar(50);
 
-truncate analysis;
 
 Load data infile 'Analysis.csv' into table analysis
 Fields terminated by ','
