@@ -4,10 +4,6 @@ alter table analysis
 modify column guests varchar(50);
 
 
-Load data infile 'Analysis.csv' into table analysis
-Fields terminated by ','
-ignore 1 lines;
-
 -- # of host_type
 
 select
