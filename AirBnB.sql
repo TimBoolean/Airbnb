@@ -34,10 +34,10 @@ group by host_type;
 
 -- Percentage of host type
 
-SELECT 
+Select
 host_type,
-COUNT(*) AS count_per_group,
-(COUNT(*) * 100.0) / (SELECT COUNT(*) FROM analysis) AS percentage
+count(*) as count_per_group,
+(count(*) * 100.0) / (select count(*) from analysis) as percentage
 from analysis
 group by host_type
 
@@ -65,10 +65,10 @@ select host_type, avg(revenue)
 from analysis
 group by 1
 
-SELECT 
+Select
 host_type,
-COUNT(*) AS count_per_group,
-(COUNT(*) * 100.0) / (select count(*) from analysis) AS percentage
+count(*) AS count_per_group,
+(count(*) * 100.0) / (select count(*) from analysis) AS percentage
 from analysis
 group by host_type
 
